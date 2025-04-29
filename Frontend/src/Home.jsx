@@ -4,7 +4,7 @@ import Input from "./Input";
 export default function Home() {
   const [todos, setTodos] = useState([]);
   return (
-    <div>
+    <div className="text-center">
       <h2>Todo List</h2>
       <Input />
       {todos.length === 0 ? (
