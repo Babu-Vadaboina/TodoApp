@@ -6,8 +6,8 @@ export default function Input() {
   const handleAdd = () => {
     axios
       .post("http://localhost:3000/add", { task: task })
-      .then((res) => {
-        console.log(res);
+      .then((result) => {
+        location.reload();
       })
       .catch((err) => console.log(err));
   };
